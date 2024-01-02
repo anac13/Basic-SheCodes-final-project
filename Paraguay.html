@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Che retã Paraguay</title>
+    <style>
+      body {
+        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/396/original/paraguay.jpg?1703619626);
+      }
+
+      .whole-body {
+        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/412/original/img.jpeg?1703634044);
+        border: 1px solid transparent;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        background: linear-gradient(
+          68.6deg,
+          rgba(255, 0, 0, 0.548) 1.8%,
+          rgb(255, 255, 255),
+          rgb(13, 0, 255, 0.548) 100.5%
+        );
+        border: 1px solid transparent;
+        font-size: 45px;
+        text-transform: uppercase;
+        margin: 20px 50px 20px 50px;
+      }
+
+      h2 {
+        border-radius: 10px;
+        font-style: oblique;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 2px 50px 2px 50px;
+        text-decoration: solid;
+        text-transform: uppercase;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 15px;
+        width: 300px;
+      }
+
+      h3 {
+        text-decoration: solid;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 5px 0px 15px auto;
+      }
+
+      a {
+        font-style: oblique;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+
+      p {
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: justify;
+        text-decoration: solid;
+        line-height: 1.5;
+        margin: 0 50px 0 50px;
+      }
+
+      button {
+        background: transparent;
+        border: 2px solid black;
+        box-shadow: 5px 5px 5px rgba(248, 248, 248, 0.127);
+        color: black;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 15px auto;
+        text-transform: uppercase;
+        transition: all 200ms ease-in-out;
+        width: 83%;
+        padding: 8px;
+      }
+
+      button:hover {
+        background: linear-gradient(
+          68.6deg,
+          rgb(255, 0, 0) 1.8%,
+          rgb(255, 255, 255),
+          rgb(13, 0, 255) 100.5%
+        );
+        border: 2px solid transparent;
+        color: black;
+        cursor: pointer;
+      }
+
+      .body-text {
+        text-align: center;
+      }
+
+      .text-part1 {
+        color: red;
+      }
+
+      .text-part2 {
+        color: white;
+      }
+
+      .text-part3 {
+        color: blue;
+      }
+
+      .paraguay-text {
+        color: red;
+        text-transform: uppercase;
+      }
+
+      .paraguay-text:hover {
+        color: blue;
+      }
+
+      .author {
+        font-size: 15px;
+        font-style: normal;
+        text-align: center;
+        opacity: 0.5;
+        margin: 0px 0px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="whole-body">
+      <div class="body-text">
+        <h1>Paraguay</h1>
+        <h2>
+          <hr />
+          <span class="text-part1">The heart </span>
+          <span class="text-part2">of South</span>
+          <span class="text-part3">America</span>
+          <hr />
+        </h2>
+        <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/408/original/paraguay.png?1703632974"
+          alt="paraguay"
+        />
+        <br />
+        <h3>
+          <a href="https://es.wikipedia.org/wiki/Paraguay" target="_blank">
+            <span class="text-part1">Learn more</span>
+            <span class="text-part2">about</span>
+            <span class="text-part3">Paraguay</span>
+          </a>
+        </h3>
+        <p>
+          <strong class="paraguay-text">Paraguay,</strong>
+          <em>
+            officially the Republic of Paraguay (in Guaraní: Paraguái
+            Tavakuairetã), is a landlocked American country located in the area
+            central South America. It is a bilingual country. Language
+            predominant native, the Guaraní, has coexisted for centuries with
+            the Spanish and is the source of an immense poetic production (oral
+            and written), expressed in musical and literary compositions valued
+            throughout the world world. Likewise, it is the language of everyday
+            life, spoken by the majority of the inhabitants.
+          </em>
+        </p>
+        <button class="visit-country">Visit Paraguay</button>
+
+        <p class="author">Coded by Ana Cañete</p>
+      </div>
+    </div>
+    <script>
+      function moreInfo() {
+        let name = prompt("What's your name?");
+        let country = prompt("What country are you from");
+        if (name.length) {
+          alert("Thanks, " + name + " . Come discover Paraguay!");
+        } else {
+          alert("You don't seem very interested in getting to know Paraguay.");
+        }
+      }
+
+      let visitCountry = document.querySelector(".visit-country");
+      visitCountry.addEventListener("click", moreInfo);
+    </script>
+  </body>
+</html>
